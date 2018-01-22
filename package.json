@@ -1,0 +1,33 @@
+{
+  "name": "mqtt-fake-sensor",
+  "version": "1.0.0",
+  "description": "Generate sensor data for mqtt-logger",
+  "main": "app.js",
+  "scripts": {
+    "start-dev": "NODE_ENV=development DEBUG=DataFaker* ./node_modules/.bin/nodemon app.js",
+    "start": "NODE_ENV=production app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/cableman/mqtt-faker.git"
+  },
+  "keywords": [
+    "MQTT",
+    "IOT",
+    "influx"
+  ],
+  "author": "Jesper Kristensen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cableman/mqtt-faker/issues"
+  },
+  "homepage": "https://github.com/cableman/mqtt-faker#readme",
+  "dependencies": {
+    "debug": "^3.1.0",
+    "mqtt": "^2.15.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.13.2"
+  }
+}
