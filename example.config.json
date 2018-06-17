@@ -1,0 +1,13 @@
+{
+	"clientId": "DataLoggerInflux",
+	"host": "mqtt://localhost",
+	"port": "1883",
+	"username": "",
+	"password": "",
+	"sensors": [{
+	  "topic": "/esp/sensor1",
+	  "database": "esp_sensor1",
+	  "measurement": "sensor1",
+	  "fields": ["temperature", "humidity", "lux"]
+	}]
+}
