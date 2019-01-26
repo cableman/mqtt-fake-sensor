@@ -38,7 +38,7 @@ for (var i in config.sensors) {
   // Send messages with the configured interval.
   setInterval(sendMessage, sensor.interval * 1000, sensor.topic + '/pressure', 1005, 1008);
   setInterval(sendMessage, sensor.interval * 1000, sensor.topic + '/temperature', 19.0, 23.0);
-  setInterval(sendMessage, sensor.interval * 1000, sensor.topic + '/humidity', 30.0, 32.0);
+  setInterval(sendMessage, sensor.interval * 1000, sensor.topic + '/humidity', 43.0, 67.0);
   setInterval(sendMessage, sensor.interval * 1000, sensor.topic + '/lux', 10, 15);
 }
 
